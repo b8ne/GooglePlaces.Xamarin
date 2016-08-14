@@ -32,10 +32,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Places\PlacesAutocomplete.cs" />
-    <Compile Include="Places\PlacesHttpProvider.cs" />
+    <Compile Include="Provider\PlacesHttpProvider.cs" />
+    <Compile Include="Provider\PlacesConfig.cs" />
+    <Compile Include="Places\PlacesObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Places\" />
+    <Folder Include="Provider\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Reactive.Core">
