@@ -34,7 +34,10 @@
     <Compile Include="Autocomplete\PlacesAutocomplete.cs" />
     <Compile Include="Provider\PlacesHttpProvider.cs" />
     <Compile Include="Provider\PlacesConfig.cs" />
-    <Compile Include="Autocomplete\PredictionObject.cs" />
+    <Compile Include="Autocomplete\Prediction.cs" />
+    <Compile Include="Autocomplete\PredictionTerm.cs" />
+    <Compile Include="Autocomplete\PredictionMatchedSubstring.cs" />
+    <Compile Include="Autocomplete\Predictions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Autocomplete\" />

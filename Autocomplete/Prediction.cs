@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace GooglePlaces.Xamarin
@@ -6,15 +7,8 @@ namespace GooglePlaces.Xamarin
 	/// <summary>
 	/// The Autocomplete Prediction
 	/// </summary>
-	public class PredictionObject
+	public class Prediction
 	{
-		/// <summary>
-		/// Initializes a new instance of the <see cref="PredictionObject"/> class.
-		/// </summary>
-		internal PredictionObject()
-		{
-		}
-
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
@@ -24,14 +18,16 @@ namespace GooglePlaces.Xamarin
 		[JsonProperty("reference")]
 		public string Reference { get; set; }
 
+		public List<PredictionMatchedSubstring> matched_substrings { get; set; }	
+
 		[JsonProperty("id")]
 		public string Id { get; set; }
 
 		[JsonProperty("terms")]
-		public Array Terms { get; set; }
+		public List<PredictionTerm> Terms { get; set; }
 
 		[JsonProperty("types")]
-		public Array Types { get; set; }
+		public List<string> Types { get; set; }
 	}
 }
 

@@ -25,8 +25,8 @@ You will need your own valid Google API and project setup via the Google Develop
 
 ```csharp
 PlacesAutocomplete autocompleteObject = new PlacesAutocomplete("YOUR API KEY");
-List<PredictionObject> predictions = await autocompleteObject.GetGoogleAutoComplete("SEARCH INPUT");
-foreach (var prediction in predictions) {
+Predictions predictions = await autocompleteObject.GetGoogleAutoComplete("SEARCH INPUT");
+foreach (var prediction in predictions.predictions) {
     var description = prediction.Description;
 	var place_id = prediction.Place_id;
 	var id = prediction.Id;
