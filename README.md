@@ -17,10 +17,22 @@ Install-Package GooglePlaces.Xamarin
 
 ## Usage
 
+### Setup
 
+You will need your own valid Google API and project setup via the Google Developers Console.
 
 ### Autocomplete
 
 ```csharp
-
+PlacesAutocomplete autocompleteObject = new PlacesAutocomplete("YOUR API KEY");
+List<PredictionObject> predictions = await autocompleteObject.GetGoogleAutoComplete("SEARCH INPUT");
+foreach (var prediction in predictions) {
+    var description = prediction.Description;
+	var place_id = prediction.Place_id;
+	var id = prediction.Id;
+	var reference = prediction.Reference;
+	var terms = prediction.Terms;
+	var type = prediction.Types;
+}
 ```
+View prediction definitions at [Google Places API](https://developers.google.com/places/web-service/autocomplete#place_autocomplete_responses)
