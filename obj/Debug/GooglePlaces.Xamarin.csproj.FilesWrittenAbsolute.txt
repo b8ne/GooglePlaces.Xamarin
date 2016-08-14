@@ -1,0 +1,10 @@
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/GooglePlaces.Xamarin.dll.mdb
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/GooglePlaces.Xamarin.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/obj/Debug/GooglePlaces.Xamarin.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/obj/Debug/GooglePlaces.Xamarin.dll.mdb
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/System.Reactive.Core.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/System.Reactive.Interfaces.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/System.Reactive.Linq.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/System.Reactive.PlatformServices.dll
+/Users/ben/Documents/Dev/Mirk/GooglePlaces.Xamarin/bin/Debug/Newtonsoft.Json.dll
