@@ -31,13 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Places\PlacesAutocomplete.cs" />
+    <Compile Include="Autocomplete\PlacesAutocomplete.cs" />
     <Compile Include="Provider\PlacesHttpProvider.cs" />
     <Compile Include="Provider\PlacesConfig.cs" />
-    <Compile Include="Places\PlacesObject.cs" />
+    <Compile Include="Autocomplete\PredictionObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Places\" />
+    <Folder Include="Autocomplete\" />
     <Folder Include="Provider\" />
   </ItemGroup>
   <ItemGroup>

@@ -26,12 +26,12 @@
 		/// Creates post body content for an autocomplete request
 		/// </summary>
 		/// <param name="input"> The search params. </param>
-		public async Task<List<PlacesObject>> GetGoogleAutoComplete(string input)
+		public async Task<List<PredictionObject>> GetGoogleAutoComplete(string input)
 		{
 			string content = "input=" + input + "&components=country:au";
 			string responseData = await httpProvider.FetchPostContentAsync(content).ConfigureAwait(false);
 
-			var predictions = JsonConvert.DeserializeObject<List<PlacesObject>>(responseData);
+			var predictions = JsonConvert.DeserializeObject<List<PredictionObject>>(responseData);
 
 			return predictions;
 		}

@@ -6,12 +6,12 @@ namespace GooglePlaces.Xamarin
 	/// <summary>
 	/// The Autocomplete Prediction
 	/// </summary>
-	public class PlacesObject
+	public class PredictionObject
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PlacesObject"/> class.
+		/// Initializes a new instance of the <see cref="PredictionObject"/> class.
 		/// </summary>
-		internal PlacesObject()
+		internal PredictionObject()
 		{
 		}
 
