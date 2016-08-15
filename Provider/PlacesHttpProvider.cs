@@ -14,8 +14,6 @@ namespace GooglePlaces.Xamarin
 		private readonly HttpClient client;
 		private readonly PlacesConfig authConfig;
 
-		private const string GooglePlacesUrl = "https://maps.googleapis.com/maps/api/place/autocomplete/json";
-
 		/// <summary>
 		/// Initializes a new instance of the <see cref="PlacesHttpProvider"/> class.
 		/// </summary>
@@ -30,9 +28,9 @@ namespace GooglePlaces.Xamarin
 		/// Makes post request to Google API
 		/// </summary>
 		/// <param name="postContent"> The post body. </param>
-		public async Task<string> FetchPostContentAsync(string postContent)
+		public async Task<string> FetchPostContentAsync(string url, string postContent)
 		{
-			string uri = GooglePlacesUrl + "?" + postContent + "&key=" + this.authConfig.ApiKey;
+			string uri = url + "?" + postContent + "&key=" + this.authConfig.ApiKey;
 			var response = await this.client.PostAsync(new Uri(uri), new StringContent("")).ConfigureAwait(false);
 			var responseData = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
