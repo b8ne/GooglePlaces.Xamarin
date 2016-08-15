@@ -21,6 +21,12 @@ Install-Package GooglePlaces.Xamarin
 
 You will need your own valid Google API and project setup via the Google Developers Console.
 
+1. Log in to [Google Developer Console](https://console.developers.google.com)
+
+2. Create a new project.
+
+3. Add a "Browser" API Key under Credentials.
+
 ### Autocomplete
 
 ```csharp
@@ -36,3 +42,16 @@ foreach (var prediction in predictions.predictions) {
 }
 ```
 View prediction definitions at [Google Places API](https://developers.google.com/places/web-service/autocomplete#place_autocomplete_responses)
+
+
+### Geocode
+```csharp
+PlacesGeocode geocodeObject = new PlacesGeocode("YOUR API KEY");
+Geocode response = await geocodeObject.GetGeocode("ADDRESS");
+foreach (var results in response.results) {
+	var location = results.geometry.location;
+	var lat = location.lat;
+	var lng = location.lng;
+	...
+}
+```
